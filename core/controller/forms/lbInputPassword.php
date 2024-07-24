@@ -1,8 +1,8 @@
 <?php
 
-class lbInputPassword{
-	function create($config){
+class lbInputPassword
+{
+	function create($config)
+	{
 	}
 }
-
-?>

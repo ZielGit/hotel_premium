@@ -1,8 +1,8 @@
 <?php
 
-class lbValidator{
-	function create($config){
+class lbValidator
+{
+	function create($config)
+	{
 	}
 }
-
-?>

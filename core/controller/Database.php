@@ -8,6 +8,7 @@ class Database
 	public $pass;
 	public $host;
 	public $ddbb;
+
 	function Database()
 	{
 		$this->user = "root";
