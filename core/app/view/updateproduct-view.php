@@ -1,22 +1,29 @@
 <?php
 
-if(count($_POST)>0){
-
-	$producto = ProductoData::getById($marca=$_POST["id_producto"]);
+if (count($_POST) > 0) {
+	$producto = ProductoData::getById($marca = $_POST["id_producto"]);
 	$producto->codigo = $_POST["codigo"];
 	$producto->nombre = $_POST["nombre"];
- 
-		$marca="NULL";
-	  if($_POST["marca"]!=""){ $marca=$_POST["marca"];}
 
-	  $presentacion="NULL";
-	  if($_POST["presentacion"]!=""){ $presentacion=$_POST["presentacion"];}
+	$marca = "NULL";
+	if ($_POST["marca"] != "") {
+		$marca = $_POST["marca"];
+	}
 
-	  $descripcion="NULL";
-	  if($_POST["descripcion"]!=""){ $descripcion=$_POST["descripcion"];}
+	$presentacion = "NULL";
+	if ($_POST["presentacion"] != "") {
+		$presentacion = $_POST["presentacion"];
+	}
 
-	  $precio_compra="0";
-	  if($_POST["precio_compra"]!=""){ $precio_compra=$_POST["precio_compra"];}
+	$descripcion = "NULL";
+	if ($_POST["descripcion"] != "") {
+		$descripcion = $_POST["descripcion"];
+	}
+
+	$precio_compra = "0";
+	if ($_POST["precio_compra"] != "") {
+		$precio_compra = $_POST["precio_compra"];
+	}
 
 	$producto->presentacion = $presentacion;
 	$producto->marca = $marca;
@@ -24,14 +31,7 @@ if(count($_POST)>0){
 	$producto->precio_compra = $precio_compra;
 	$producto->precio_venta = $_POST["precio_venta"];
 	$producto->stock = $_POST["stock"];
-
-
 	$producto->update();
 
-print "<script>window.location='index.php?view=productos';</script>";
-
-
+	print "<script>window.location='index.php?view=productos';</script>";
 }
-
-
-?>

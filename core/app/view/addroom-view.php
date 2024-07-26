@@ -1,7 +1,6 @@
 <?php
 
-if(count($_POST)>0){
-
+if (count($_POST) > 0) {
 	$habitacion = new HabitacionData();
 	$habitacion->nombre = $_POST["nombre"];
 	$habitacion->descripcion = $_POST["descripcion"];
@@ -9,10 +8,5 @@ if(count($_POST)>0){
 	$habitacion->precio = $_POST["precio"];
 	$habitacion->estado = "1";
 	$habitacion->add();
- 
-print "<script>window.location='index.php?view=habitacion';</script>";
-
-
+	print "<script>window.location='index.php?view=habitacion';</script>";
 }
-
-?>

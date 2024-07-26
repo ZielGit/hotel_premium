@@ -1,9 +1,7 @@
 <?php
-
 if (isset($_SESSION["user_id"]) && $_SESSION["user_id"] != "") {
 	print "<script>window.location='index.php?view=home';</script>";
 }
-
 ?>
 <br><br><br><br><br>
 <div class="content">
@@ -14,17 +12,14 @@ if (isset($_SESSION["user_id"]) && $_SESSION["user_id"] != "") {
 					<div class="alert alert-success">
 						<p><i class='glyphicon glyphicon-off'></i> Se ha cambiado la contraseña exitosamente !!</p>
 						<p>Pruebe iniciar sesion con su nueva contraseña.</p>
-
 					</div>
 				<?php setcookie("password_updated", "", time() - 18600);
 				endif; ?>
-
 				<div class="card">
 					<div class="card-header" data-background-color="green">
 						<h4 class="title">Acceder </h4>
 					</div>
 					<div class="card-content">
-
 						<form accept-charset="UTF-8" role="form" method="post" action="index.php?view=processlogin">
 							<fieldset>
 								<div class="form-group">
@@ -36,7 +31,6 @@ if (isset($_SESSION["user_id"]) && $_SESSION["user_id"] != "") {
 								<input class="btn btn-lg btn-primary btn-block" type="submit" value="Iniciar Sesion">
 							</fieldset>
 						</form>
-
 					</div>
 				</div>
 			</div>

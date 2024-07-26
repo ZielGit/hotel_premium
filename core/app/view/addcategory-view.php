@@ -1,33 +1,24 @@
 <?php
 
-if(count($_POST)>0){
+if (count($_POST) > 0) {
+  $categoria = new CategoriaData();
+  $categoria->nombre = $_POST["nombre"];
 
-	$categoria = new CategoriaData();
-	$categoria->nombre = $_POST["nombre"];
-
-
-
-  if(isset($_FILES["imagen"])){
+  if (isset($_FILES["imagen"])) {
     $imagen = new Upload($_FILES["imagen"]);
-    if($imagen->uploaded){
+    if ($imagen->uploaded) {
       $imagen->Process("img/categoria/");
-      if($imagen->processed){
+      if ($imagen->processed) {
         $categoria->imagen = $imagen->file_dst_name;
         $prod = $categoria->add_whit_image();
       }
-    }else{
+    } else {
 
-  $prod= $categoria->add();
+      $prod = $categoria->add();
     }
-  }
-  else{
-  $prod= $categoria->add();
-
+  } else {
+    $prod = $categoria->add();
   }
 
-
-print "<script>window.location='index.php?view=categoria';</script>";
-
+  print "<script>window.location='index.php?view=categoria';</script>";
 }
-
-?>
