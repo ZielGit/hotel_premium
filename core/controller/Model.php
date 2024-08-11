@@ -24,7 +24,7 @@ class Model
 	public static function many($query, $aclass)
 	{
 		$cnt = 0;
-		$array = array();
+		$array = [];
 		while ($r = $query->fetch_array()) {
 			$array[$cnt] = new $aclass;
 			$cnt2 = 1;

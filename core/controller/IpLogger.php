@@ -60,7 +60,7 @@ class IpLogger
 			$id = self::addIP();
 		} else {
 		}
-		return array("id" => $id, "ca" => $ca);
+		return ["id" => $id, "ca" => $ca];
 	}
 
 	public static function verifyIP()
