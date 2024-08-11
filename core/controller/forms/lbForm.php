@@ -4,7 +4,7 @@ class lbForm
 {
 	public function lbForm()
 	{
-		$this->field = array();
+		$this->field = [];
 	}
 
 	public function addField($name, $field)
