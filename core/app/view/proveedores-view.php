@@ -55,7 +55,7 @@
         </div>
         <?php 
           $proveedores = PersonaData::getProveedor(); 
-        } ?>
+        ?>
         <?php   
         if(count($proveedores)>0){  ?>
         <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">

@@ -24,7 +24,7 @@ function backup_tables($host, $user, $pass, $dbname, $tables = '*')
 
   //get all of the tables
   if ($tables == '*') {
-    $tables = array();
+    $tables = [];
     $result = mysqli_query($link, 'SHOW TABLES');
     while ($row = mysqli_fetch_row($result)) {
       $tables[] = $row[0];
