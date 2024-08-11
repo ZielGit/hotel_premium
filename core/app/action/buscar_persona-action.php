@@ -3,7 +3,7 @@
 if (isset($_GET['term'])) {
 	$base = new Database();
 	$con = $base->connect();
-	$return_arr = array();
+	$return_arr = [];
 	/* Si la conexión a la base de datos , ejecuta instrucción SQL. */
 	if ($con) {
 		$fetch = mysqli_query($con, "SELECT * FROM persona where documento like '%" . mysqli_real_escape_string($con, ($_GET['term'])) . "%' LIMIT 0 ,50");

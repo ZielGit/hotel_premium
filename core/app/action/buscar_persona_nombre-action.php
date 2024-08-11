@@ -3,7 +3,7 @@
 if (isset($_GET['term'])) {
 	$base = new Database();
 	$con = $base->connect();
-	$return_arr = array();
+	$return_arr = [];
 
 	/* Si la conexión a la base de datos , ejecuta instrucción SQL. */
 	if ($con) {
