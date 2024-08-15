@@ -2,7 +2,7 @@
 
 class lbForm
 {
-	public function lbForm()
+	public function __construct()
 	{
 		$this->field = [];
 	}
