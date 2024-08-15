@@ -2,7 +2,5 @@
 
 class lbInputPassword
 {
-	function create($config)
-	{
-	}
+	function create($config) {}
 }

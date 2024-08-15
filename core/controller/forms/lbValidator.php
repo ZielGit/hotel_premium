@@ -2,7 +2,5 @@
 
 class lbValidator
 {
-	function create($config)
-	{
-	}
+	function create($config) {}
 }
