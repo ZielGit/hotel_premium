@@ -9,7 +9,7 @@ class Database
 	public $host;
 	public $ddbb;
 
-	function Database()
+	function __constructor()
 	{
 		$this->user = "root";
 		$this->pass = "";

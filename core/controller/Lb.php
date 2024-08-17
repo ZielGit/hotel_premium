@@ -7,9 +7,7 @@
 
 class Lb
 {
-	public function Lb()
-	{
-	}
+	public function __construct() {}
 
 	public function start()
 	{
