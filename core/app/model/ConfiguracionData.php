@@ -4,7 +4,7 @@ class ConfiguracionData
 {
 	public static $tablename = "configuracion";
 
-	public function ConfiguracionData()
+	public function __construct()
 	{
 		$this->nombre = "";
 		$this->direccion = "";

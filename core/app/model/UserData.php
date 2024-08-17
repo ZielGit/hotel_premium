@@ -4,7 +4,7 @@ class UserData
 {
 	public static $tablename = "user";
 
-	public function Userdata()
+	public function __construct()
 	{
 		$this->name = "";
 		$this->lastname = "";

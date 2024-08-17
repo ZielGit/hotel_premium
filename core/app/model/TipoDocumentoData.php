@@ -4,7 +4,7 @@ class TipoDocumentoData
 {
 	public static $tablename = "tipo_documento";
 
-	public function TipoDocumentoData()
+	public function __construct()
 	{
 		$this->nombre = "";
 		$this->fecha_creada = "NOW()";

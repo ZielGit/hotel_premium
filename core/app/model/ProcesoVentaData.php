@@ -4,7 +4,7 @@ class ProcesoVentaData
 {
 	public static $tablename = "proceso_venta";
 
-	public function ProcesoVentaData()
+	public function __construct()
 	{
 		$this->cantidad = "";
 		$this->precio = "";

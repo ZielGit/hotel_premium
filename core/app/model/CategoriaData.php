@@ -4,7 +4,7 @@ class CategoriaData
 {
 	public static $tablename = "categoria";
 
-	public function CategoriaData()
+	public function __construct()
 	{
 		$this->nombre = "";
 		$this->fecha_creada = "NOW()";

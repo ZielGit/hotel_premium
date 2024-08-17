@@ -4,7 +4,7 @@ class ProcesoSueldoData
 {
 	public static $tablename = "proceso_sueldo";
 
-	public function ProcesoSueldoData()
+	public function __construct()
 	{
 		$this->fecha = "";
 		$this->fecha_creada = "NOW()";

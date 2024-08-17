@@ -4,7 +4,7 @@ class GastoData
 {
 	public static $tablename = "gasto";
 
-	public function GastoData()
+	public function __construct()
 	{
 		$this->descripcion = "";
 		$this->precio = "";

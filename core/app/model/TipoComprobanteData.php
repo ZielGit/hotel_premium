@@ -4,7 +4,7 @@ class TipoComprobanteData
 {
 	public static $tablename = "tipo_comprobante";
 
-	public function TipoComprobanteData()
+	public function __construct()
 	{
 		$this->nombre = "";
 	}

@@ -4,7 +4,7 @@ class OperationData
 {
 	public static $tablename = "operation";
 
-	public function OperationData()
+	public function __construct()
 	{
 		$this->name = "";
 		$this->product_id = "";

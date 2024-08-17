@@ -4,7 +4,7 @@ class ProductoData
 {
 	public static $tablename = "producto";
 
-	public function ProductoData()
+	public function __construct()
 	{
 		$this->codigo = "";
 		$this->nombre = "";

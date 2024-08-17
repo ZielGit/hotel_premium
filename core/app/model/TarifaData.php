@@ -4,7 +4,7 @@ class TarifaData
 {
 	public static $tablename = "tarifa";
 
-	public function TarifaData()
+	public function __construct()
 	{
 		$this->nombre = "";
 		$this->fecha_creada = "NOW()";

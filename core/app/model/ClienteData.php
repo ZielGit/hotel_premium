@@ -4,7 +4,7 @@ class ClienteData
 {
 	public static $tablename = "cliente";
 
-	public function ClienteData()
+	public function __construct()
 	{
 		$this->nombres = "";
 		$this->apellidos = "";

@@ -4,7 +4,7 @@ class ContactoData
 {
 	public static $tablename = "contacto";
 
-	public function ContactoData()
+	public function __construct()
 	{
 		$this->documento = "";
 		$this->nombre = "";

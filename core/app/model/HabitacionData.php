@@ -4,7 +4,7 @@ class HabitacionData
 {
 	public static $tablename = "habitacion";
 
-	public function HabitacionData()
+	public function __construct()
 	{
 		$this->nombre = "";
 		$this->descripcion = "";

@@ -4,9 +4,7 @@ class TarifaHabitacionData
 {
 	public static $tablename = "tarifa_habitacion";
 
-	public function TarifaHabitacionData()
-	{
-	}
+	public function __construct() {}
 
 	public function getTarifa()
 	{

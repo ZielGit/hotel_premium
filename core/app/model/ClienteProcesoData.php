@@ -4,9 +4,7 @@ class ClienteProcesoData
 {
 	public static $tablename = "cliente_proceso";
 
-	public function ClienteProcesoData()
-	{
-	}
+	public function __construct() {}
 
 	public function getCliente()
 	{
