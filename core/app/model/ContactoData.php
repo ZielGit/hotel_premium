@@ -2,7 +2,14 @@
 
 class ContactoData
 {
-	public static $tablename = "contacto";
+	public static string $tablename = "contacto";
+
+	public int $id;
+	public int $id_persona;
+	public $documento;
+	public $nombre;
+	public $telefono;
+	public $email;
 
 	public function __construct()
 	{

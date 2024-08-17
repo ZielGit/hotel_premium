@@ -2,7 +2,22 @@
 
 class ProductData
 {
-	public static $tablename = "product";
+	public static string $tablename = "product";
+
+	public int $id;
+	public int $user_id;
+	public int $category_id;
+	public $name;
+	public $price_in;
+	public $price_out;
+	public $unit;
+	public $presentation;
+	public $created_at;
+	public $barcode;
+	public $description;
+	public $inventary_min;
+	public $image;
+	public $is_active;
 
 	public function __construct()
 	{

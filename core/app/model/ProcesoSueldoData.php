@@ -2,7 +2,15 @@
 
 class ProcesoSueldoData
 {
-	public static $tablename = "proceso_sueldo";
+	public static string $tablename = "proceso_sueldo";
+
+	public int $id;
+	public int $id_sueldo;
+	public int $id_caja;
+	public $fecha;
+	public $fecha_creada;
+	public $monto;
+	public $tipo;
 
 	public function __construct()
 	{

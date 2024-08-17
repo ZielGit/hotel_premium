@@ -2,7 +2,14 @@
 
 class TmpData
 {
-	public static $tablename = "tmp";
+	public static string $tablename = "tmp";
+
+	public int $id_producto;
+	public int $sessionn_id;
+	public int $id_tmp;
+	public $cantidad_tmp;
+	public $precio_tmp;
+	public $tipo_operacion;
 
 	public function __construct()
 	{

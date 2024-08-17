@@ -2,7 +2,15 @@
 
 class GastoData
 {
-	public static $tablename = "gasto";
+	public static string $tablename = "gasto";
+
+	public int $id;
+	public int $id_usuario;
+	public int $id_caja;
+	public $descripcion;
+	public $precio;
+	public $fecha;
+	public $hora;
 
 	public function __construct()
 	{

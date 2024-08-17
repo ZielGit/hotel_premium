@@ -2,7 +2,18 @@
 
 class UserData
 {
-	public static $tablename = "user";
+	public static string $tablename = "user";
+
+	public int $id;
+	public $name;
+	public $lastname;
+	public $username;
+	public $email;
+	public $image;
+	public $password;
+	public $created_at;
+	public $is_admin;
+	public $is_active;
 
 	public function __construct()
 	{

@@ -2,7 +2,20 @@
 
 class CajaData
 {
-	public static $tablename = "caja";
+	public static string $tablename = "caja";
+
+	public int $id;
+	public int $id_usuario;
+	public int $id_vehiculo;
+	public $tipo;
+	public $estado;
+	public $fecha;
+	public $hora;
+	public $fecha_apertura;
+	public $fecha_cierre;
+	public $monto_apertura;
+	public $monto_cierre;
+	public $fecha_creada;
 
 	public function __construct()
 	{

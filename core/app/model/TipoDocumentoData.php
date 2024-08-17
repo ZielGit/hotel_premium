@@ -2,7 +2,11 @@
 
 class TipoDocumentoData
 {
-	public static $tablename = "tipo_documento";
+	public static string $tablename = "tipo_documento";
+
+	public int $id;
+	public $nombre;
+	public $fecha_creada;
 
 	public function __construct()
 	{

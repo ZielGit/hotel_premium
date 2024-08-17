@@ -2,7 +2,16 @@
 
 class OperationData
 {
-	public static $tablename = "operation";
+	public static string $tablename = "operation";
+
+	public int $id;
+	public int $sell_id;
+	public int $cut_id;
+	public int $operation_type_id;
+	public int $product_id;
+	public $name;
+	public $q;
+	public $created_at;
 
 	public function __construct()
 	{

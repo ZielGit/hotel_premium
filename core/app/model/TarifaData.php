@@ -2,7 +2,11 @@
 
 class TarifaData
 {
-	public static $tablename = "tarifa";
+	public static string $tablename = "tarifa";
+
+	public int $id;
+	public $nombre;
+	public $fecha_creada;
 
 	public function __construct()
 	{

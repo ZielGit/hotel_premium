@@ -2,7 +2,28 @@
 
 class ProcesoData
 {
-	public static $tablename = "proceso";
+	public static string $tablename = "proceso";
+
+	public int $id;
+	public int $id_habitacion;
+	public int $id_tarifa;
+	public int $id_cliente;
+	public int $id_usuario;
+	public int $id_caja;
+	public int $id_categoria;
+	public int $id_tipo_pago;
+	public $dinero_dejado;
+	public $fecha_entrada;
+	public $fecha_salida;
+	public $cant_personas;
+	public $fecha_creada;
+	public $precio;
+	public $cant_noche;
+	public $cantidad;
+	public $pagado;
+	public $nombre;
+	public $descripcion;
+	public $total;
 
 	public function __construct()
 	{

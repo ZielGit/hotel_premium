@@ -2,7 +2,28 @@
 
 class PersonaData
 {
-	public static $tablename = "persona";
+	public static string $tablename = "persona";
+
+	public int $id;
+	public int $id_categoria;
+	public $documento;
+	public $nombre;
+	public $fecha_nac;
+	public $tipo_documento;
+	public $razon_social;
+	public $direccion;
+	public $giro;
+	public $nacionalidad;
+	public $estado_civil;
+	public $ocupacion;
+	public $medio_transporte;
+	public $destino;
+	public $motivo;
+	public $fecha_creada;
+	public $descripcion;
+	public $vip;
+	public $limite;
+	public $contador;
 
 	public function __construct()
 	{

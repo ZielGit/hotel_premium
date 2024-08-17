@@ -2,7 +2,20 @@
 
 class ProcesoVentaData
 {
-	public static $tablename = "proceso_venta";
+	public static string $tablename = "proceso_venta";
+
+	public int $id;
+	public int $id_producto;
+	public int $id_operacion;
+	public int $id_venta;
+	public int $id_caja;
+	public int $id_usuario;
+	public int $id_categoria;
+	public $cantidad;
+	public $precio;
+	public $fecha_creada;
+	public $nombre;
+	public $descripcion;
 
 	public function __construct()
 	{

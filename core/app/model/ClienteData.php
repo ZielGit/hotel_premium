@@ -2,7 +2,16 @@
 
 class ClienteData
 {
-	public static $tablename = "cliente";
+	public static string $tablename = "cliente";
+
+	public int $id;
+	public $nombres;
+	public $apellidos;
+	public $direccion;
+	public $email;
+	public $telefono;
+	public $usuario;
+	public $password;
 
 	public function __construct()
 	{

@@ -2,7 +2,17 @@
 
 class VentaData
 {
-	public static $tablename = "venta";
+	public static string $tablename = "venta";
+
+	public int $id;
+	public int $id_tipo_comprobante;
+	public int $id_usuario;
+	public int $id_proveedor;
+	public int $id_tipo_pago;
+	public int $id_caja;
+	public $nro_comprobante;
+	public $total;
+	public $fecha_creada;
 
 	public function __construct()
 	{

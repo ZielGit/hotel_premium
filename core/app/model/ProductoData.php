@@ -2,7 +2,19 @@
 
 class ProductoData
 {
-	public static $tablename = "producto";
+	public static string $tablename = "producto";
+
+	public int $id;
+	public int $id_proveedor;
+	public $codigo;
+	public $nombre;
+	public $marca;
+	public $descripcion;
+	public $precio_compra;
+	public $precio_venta;
+	public $fecha_creada;
+	public $presentacion;
+	public $stock;
 
 	public function __construct()
 	{

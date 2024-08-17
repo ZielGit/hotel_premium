@@ -2,7 +2,12 @@
 
 class ClienteProcesoData
 {
-	public static $tablename = "cliente_proceso";
+	public static string $tablename = "cliente_proceso";
+
+	public int $id;
+	public int $id_cliente;
+	public int $id_proceso;
+	public $sesion;
 
 	public function __construct() {}
 

@@ -2,7 +2,12 @@
 
 class TarifaHabitacionData
 {
-	public static $tablename = "tarifa_habitacion";
+	public static string $tablename = "tarifa_habitacion";
+
+	public int $id;
+	public int $id_tarifa;
+	public int $id_habitacion;
+	public $precio;
 
 	public function __construct() {}
 

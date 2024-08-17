@@ -2,7 +2,18 @@
 
 class ConfiguracionData
 {
-	public static $tablename = "configuracion";
+	public static string $tablename = "configuracion";
+
+	public int $id;
+	public $nombre;
+	public $direccion;
+	public $estado;
+	public $telefono;
+	public $fax;
+	public $rnc;
+	public $registro_empresarial;
+	public $ciudad;
+	public $logo;
 
 	public function __construct()
 	{

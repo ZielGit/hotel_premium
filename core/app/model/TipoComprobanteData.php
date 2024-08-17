@@ -2,7 +2,11 @@
 
 class TipoComprobanteData
 {
-	public static $tablename = "tipo_comprobante";
+	public static string $tablename = "tipo_comprobante";
+
+	public int $id;
+	public $nombre;
+	public $estado;
 
 	public function __construct()
 	{

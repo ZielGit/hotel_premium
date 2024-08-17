@@ -2,7 +2,14 @@
 
 class SueldoData
 {
-	public static $tablename = "sueldo";
+	public static string $tablename = "sueldo";
+
+	public int $id;
+	public int $id_usuario;
+	public $fecha_pago;
+	public $monto;
+	public $dia_pago;
+	public $fecha_comienzo;
 
 	public function __construct()
 	{

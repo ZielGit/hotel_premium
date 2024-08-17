@@ -2,7 +2,19 @@
 
 class ReservaData
 {
-	public static $tablename = "reservations";
+	public static string $tablename = "reservations";
+
+	public int $id;
+	public int $room_id;
+	public int $id_categoria;
+	public $name;
+	public $start;
+	public $end;
+	public $status;
+	public $paid;
+	public $nombre;
+	public $descripcion;
+	public $estado;
 
 	public function __construct()
 	{

@@ -2,7 +2,12 @@
 
 class CategoriaData
 {
-	public static $tablename = "categoria";
+	public static string $tablename = "categoria";
+
+	public int $id;
+	public $nombre;
+	public $fecha_creada;
+	public $imagen;
 
 	public function __construct()
 	{
