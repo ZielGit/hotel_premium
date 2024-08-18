@@ -9,7 +9,7 @@ class Database
 	public $host;
 	public $ddbb;
 
-	function __constructor()
+	public function __construct()
 	{
 		$this->user = "root";
 		$this->pass = "";
@@ -17,7 +17,7 @@ class Database
 		$this->ddbb = "hotel_s1";
 	}
 
-	function connect()
+	public function connect()
 	{
 		$con = new mysqli($this->host, $this->user, $this->pass, $this->ddbb);
 		$con->query("set sql_mode=''");
@@ -26,8 +26,8 @@ class Database
 
 	function connect1()
 	{
-		$db = new PDO("mysql:host=$this->host;", $this->user, $this->pass);
-		$db->exec("use `$this->ddbb`");
+		$db = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->ddbb, $this->user, $this->pass);
+		$db->exec("set names utf8");
 		return $db;
 	}
 
